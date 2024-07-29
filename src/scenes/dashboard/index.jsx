@@ -1,8 +1,10 @@
+import Headers from "../../components/Headers";
+import { Box } from "@mui/material";
 
 const Dashboard = () => {
-  return (
-    <div>Dashboard</div>
-  )
-}
+    return (
+        <Headers title={"DASHBOARD"} subtitle={"Welcome to your dashboard"} />
+    );
+};
 
-export default Dashboard
+export default Dashboard;

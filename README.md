@@ -1,1 +1,1 @@
-## Admin dashboard stater template
+## Admin dashboard

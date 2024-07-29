@@ -7,6 +7,7 @@ import SideBar from "./scenes/global/SideBar";
 import Dashbord from "./scenes/dashboard"
 import Team from "./scenes/team";
 import Contact from "./scenes/contacts"
+import Invoice from "./scenes/invoices";
 
 function App() {
     const [theme, colorMode] = UseMode();
@@ -23,6 +24,7 @@ function App() {
                             <Route path="/" element={<Dashbord />} />
                             <Route path="/team" element={<Team />} />
                             <Route path="/contacts" element={<Contact />} />
+                            <Route path="/invoices" element={<Invoice />} />
                         </Routes>
                     </main>
                 </div>

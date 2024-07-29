@@ -155,7 +155,7 @@ const SideBar = () => {
 
                         <CustomMenuItem
                             title={"Invoices Ballances"}
-                            to="/invoces"
+                            to="/invoices"
                             icon={<ReceiptOutlinedIcon />}
                             selected={selected}
                             setSelected={setSelected}

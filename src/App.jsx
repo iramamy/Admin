@@ -8,6 +8,7 @@ import Dashbord from "./scenes/dashboard"
 import Team from "./scenes/team";
 import Contact from "./scenes/contacts"
 import Invoice from "./scenes/invoices";
+import Form from "./scenes/form";
 
 function App() {
     const [theme, colorMode] = UseMode();
@@ -25,6 +26,7 @@ function App() {
                             <Route path="/team" element={<Team />} />
                             <Route path="/contacts" element={<Contact />} />
                             <Route path="/invoices" element={<Invoice />} />
+                            <Route path="/profile" element={<Form />} />
                         </Routes>
                     </main>
                 </div>

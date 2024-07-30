@@ -111,7 +111,7 @@ const LinePlot = ({ isDashboard = false }) => {
                     {
                         on: 'hover',
                         style: {
-                            itemBackground: 'rgba(0, 0, 0, .03)',
+                            itemBackground: '#fffff',
                             itemOpacity: 1
                         }
                     }

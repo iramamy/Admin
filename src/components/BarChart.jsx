@@ -115,8 +115,8 @@ const BarChart = ({ isBashboard = false }) => {
                         {
                             on: "hover",
                             style: {
-                                itemBackground: 'rgba(0, 0, 0, .03)',
-                                itemOpacity: 1,
+                                itemBackground: '#000000',
+                                itemOpacity: 1
                             },
                         },
                     ],

@@ -98,12 +98,13 @@ const PieChart = () => {
                     symbolShape: "circle",
                     effects: [
                         {
-                            on: "hover",
+                            on: 'hover',
                             style: {
-                                itemTextColor: colors.grey[100],
-                            },
-                        },
-                    ],
+                                itemBackground: '#fffff',
+                                itemOpacity: 1
+                            }
+                        }
+                    ]
                 },
             ]}
         />

@@ -9,12 +9,6 @@ const BarChart = ({ isBashboard = false }) => {
     const colors = tokens(theme.palette.mode);
 
     const plotTheme = {
-        text: {
-            fontSize: 11,
-            fill: colors.primary[100],
-            outlineWidth: 0,
-            outlineColor: "transparent",
-        },
         axis: {
             domain: {
                 line: {
@@ -71,20 +65,6 @@ const BarChart = ({ isBashboard = false }) => {
                     rotation: -45,
                     lineWidth: 6,
                     spacing: 10,
-                },
-            ]}
-            fill={[
-                {
-                    match: {
-                        id: "fries",
-                    },
-                    id: "dots",
-                },
-                {
-                    match: {
-                        id: "sandwich",
-                    },
-                    id: "lines",
                 },
             ]}
             borderColor={{

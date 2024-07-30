@@ -63,7 +63,7 @@ const Contact = () => {
     ];
 
     return (
-        <Box>
+        <Box m='20px 20px 0 20px'>
             <Headers title="CONTACT" subtitle="Our Contact" />
             <Box
                 m="40px 0 0 0"
@@ -98,6 +98,11 @@ const Contact = () => {
                     rows={ mockDataContacts }
                     columns={ columns }
                     slots={{ toolbar: GridToolbar }}
+                    initialState={{
+                        mockDataContacts,
+                        pagination: { paginationModel: { pageSize: 10 } },
+                      }}
+                    pageSizeOptions={[10, 20, 30, 40]}
                 />
             </Box>
         </Box>

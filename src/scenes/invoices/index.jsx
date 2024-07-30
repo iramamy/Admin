@@ -54,7 +54,7 @@ const Invoice = () => {
     ];
 
     return (
-        <Box>
+        <Box m='20px 20px 0 20px'>
             <Headers title="Invoice" subtitle="List of Invoices Ballance" />
             <Box
                 m="40px 0 0 0"
@@ -89,6 +89,11 @@ const Invoice = () => {
                     checkboxSelection
                     rows={mockDataInvoices}
                     columns={columns}
+                    initialState={{
+                        mockDataInvoices,
+                        pagination: { paginationModel: { pageSize: 10 } },
+                      }}
+                    pageSizeOptions={[10, 20, 30, 40]}
                 />
             </Box>
         </Box>

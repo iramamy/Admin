@@ -85,7 +85,7 @@ const Team = () => {
     ];
 
     return (
-        <Box>
+        <Box m='20px 20px 0 20px'>
             <Headers title="TEAM" subtitle="Your team" />
             <Box
                 m="40px 0 0 0"
@@ -113,7 +113,15 @@ const Team = () => {
                     }
                 }}
             >
-                <DataGrid rows={mockDataTeam} columns={columns} />
+                <DataGrid
+                    rows={mockDataTeam}
+                    columns={columns}
+                    initialState={{
+                        mockDataTeam,
+                        pagination: { paginationModel: { pageSize: 10 } },
+                      }}
+                    pageSizeOptions={[10, 20, 30, 40]}
+                />
             </Box>
         </Box>
     );

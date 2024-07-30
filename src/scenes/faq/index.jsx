@@ -6,7 +6,7 @@ import CustomAccordion from "./components/CustomAccordion";
 
 const FAQ = () => {
     return (
-        <Box m="20px 20px 0 20px">
+        <Box m="20px 20px 0 20px" >
             <Headers title="FAQ" subtitle="Frequently asked question!" />
 
             <Box height="69vh" overflow="auto">

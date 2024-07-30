@@ -40,7 +40,7 @@ const Calendar = () => {
 
             calendarApi.addEvent(newEvent);
 
-            console.log('New Event', newEvent);
+            console.log("New Event", newEvent);
             setCurrentEvents([...currentEvents, newEvent]);
         }
     };
@@ -118,14 +118,14 @@ const Calendar = () => {
                         initialEvents={[
                             {
                                 id: "1",
-                                title: 'All events',
-                                date: '2024-07-30'
+                                title: "All events",
+                                date: "2024-07-30",
                             },
                             {
                                 id: "2",
-                                title: 'Next event',
-                                date: '2024-08-05'
-                            }
+                                title: "Next event",
+                                date: "2024-08-05",
+                            },
                         ]}
                     />
                 </Box>

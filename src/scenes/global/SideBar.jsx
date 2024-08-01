@@ -105,13 +105,13 @@ const SideBar = () => {
                                         m: "10px 0 0 0 ",
                                     }}
                                 >
-                                    Ed Rosh
+                                    React Name
                                 </Typography>
                                 <Typography
                                     variant="h5"
                                     color={colors.greenAccent[500]}
                                 >
-                                    Company
+                                    Facebook
                                 </Typography>
                             </Box>
                         </Box>

@@ -13,6 +13,8 @@ const initialValues = {
     address1: "",
     address2: "",
 };
+
+
 // phoneRegEx
 const phoneRegEx =
     /^\+?(\d{1,3})?[-.\s]?(\(?\d{1,4}\)?[-.\s]?)(\d{1,4}[-.\s]?){1,2}\d{1,4}$/;

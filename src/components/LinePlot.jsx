@@ -85,7 +85,6 @@ const LinePlot = ({ isDashboard = false }) => {
         enableGridX={false}
         enableGridY={false}
         pointSize={10}
-        pointColor={{ theme: 'background' }}
         pointBorderWidth={2}
         pointBorderColor={{ from: 'serieColor' }}
         pointLabel="data.yFormatted"

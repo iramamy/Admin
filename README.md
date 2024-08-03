@@ -1,6 +1,6 @@
 ## React admin dashboard
 
-Adaptable and customizable solution suitable for various applications. It features comprehensive user and team management, contact and invoice tracking, an interactive calendar, and multiple data visualization tools. Its versatile design allows it to be easily tailored to meet the administrative needs of any organization or project, ensuring efficient and effective operations.
+An adaptable and customizable solution suitable for various applications. It features comprehensive user and team management, contact and invoice tracking, an interactive calendar, and multiple data visualization tools. Its versatile design allows it to be easily tailored to meet the administrative needs of any organization or project, ensuring efficient and effective operations.
 
 ## ⚙️ Prerequisites
 
@@ -50,3 +50,7 @@ npm run dev
 ![Pie](./images/pie.png)
 ![Line](./images/line.png)
 ![Geo](./images/geo.png)
+
+# Note:
+
+This application is not adapted for mobile devices.

@@ -10,11 +10,12 @@ import TrafficIcon from "@mui/icons-material/Traffic";
 
 import LinePlot from "../../components/LinePlot";
 import BarChart from "../../components/BarChart";
-import Geography from "../../components/Geography";
+import PieChart from "../../components/PieChart";
 import StatBox from "../../components/StatBox";
 // import ProgressCircle from "../../components/ProgressCircle";
 
 import { tokens } from "../../theme";
+import ProgressCircle from "../../components/ProgressCircle";
 const Dashboard = () => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
@@ -223,11 +224,11 @@ const Dashboard = () => {
             justifyContent="space-between"
             borderBottom={`2px solid ${colors.primary[500]}`}
           >
-            <Box>
+            <Box borderBottom={`2px solid ${colors.primary[500]}`} py="10px">
               <Typography
                 variant="h5"
                 color={colors.grey[100]}
-                fontWeight="600"
+                fontWeight="bold"
               >
                 Recent transactions
               </Typography>
@@ -269,6 +270,77 @@ const Dashboard = () => {
                 </Box>
               </>
             ))}
+          </Box>
+        </Box>
+
+        {/* ############### Row 3 ############### */}
+        {/* Box 1 */}
+        <Box
+          gridColumn="span 4"
+          gridRow="span 2"
+          backgroundColor={colors.primary[400]}
+        >
+          <Typography
+            variant="h5"
+            color={colors.grey[100]}
+            fontWeight="600"
+            p="5px"
+          >
+            Campain
+          </Typography>
+          <Box
+            display="flex"
+            flexDirection="column"
+            alignItems="center"
+            mt="25px"
+          >
+            <ProgressCircle size="125" />
+            <Typography
+              variant="h5"
+              color={colors.greenAccent[500]}
+              sx={{ mt: "15px" }}
+            >
+              $40,004 901 revenue generated
+            </Typography>
+            <Typography>Lorem ipsum dolor sit amet.</Typography>
+          </Box>
+        </Box>
+
+        {/* Box 2 */}
+        <Box
+          gridColumn="span 4"
+          gridRow="span 2"
+          backgroundColor={colors.primary[400]}
+        >
+          <Typography
+            variant="h5"
+            color={colors.grey[100]}
+            fontWeight="600"
+            p="5px"
+          >
+            Sales quality
+          </Typography>
+          <Box height="250px" width="100%">
+            <BarChart isBashboard={true} />
+          </Box>
+        </Box>
+        {/* Box 3 */}
+        <Box
+          gridColumn="span 4"
+          gridRow="span 2"
+          backgroundColor={colors.primary[400]}
+          p="5px"
+        >
+          <Typography
+            variant="h5"
+            color={colors.grey[100]}
+            fontWeight="600"
+            p="5px"
+          >
+            Sales quality
+          </Typography>
+          <Box height="250px" p="20px 20px 0 20px">
+            <PieChart isBashboard={true} />
           </Box>
         </Box>
       </Box>

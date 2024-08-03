@@ -53,4 +53,4 @@ npm run dev
 
 # Note:
 
-This application is not adapted for mobile devices.
+Yet, this application is not adapted for mobile devices.
